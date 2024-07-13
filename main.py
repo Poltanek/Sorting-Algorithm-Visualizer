@@ -64,13 +64,19 @@ UserInterface.grid(row=0, column=0, padx=15, pady=5)
 MainCanvas = Canvas(mainWindow, bg="white", width=600, height=380)
 MainCanvas.grid(row=2, column=0, padx=10, pady=5)
 
+# Buttons & Labels & Entries
+
 SelectLbl = Label(UserInterface, text="Select Algorithm", bg="black", fg="white")
 SelectLbl.grid(row=0, column=0, padx=5, pady=5, sticky=W)
 AlgMenu = ttk.Combobox(UserInterface, textvariable=selected_alg, values=["Bubble Sort", "Selection Sort", "Insertion Sort", "Merge Sort", "Quick Sort", "Heap Sort"], state="readonly")
 AlgMenu.grid(row=0, column=1, padx=5, pady=5)
 AlgMenu.current(0)
+
 GenerateBtn = Button(UserInterface, text="Generate Array", command=GenerateArray, bg="black", fg="white")
 GenerateBtn.grid(row=0, column=2, padx=5, pady=5)
+
+SpeedScale = Scale(UserInterface, from_=0.1, to=2.0, bg="black", fg="white", length=200, digits=2, resolution=0.2, orient=HORIZONTAL, label="Select Speed [s]")
+SpeedScale.grid(row=0, column=3, padx=5, pady=5)
 
 # Row 1
 SizeLbl = Label(UserInterface, text="Size Value", bg="black", fg="white")
