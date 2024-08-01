@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 import random
-from bubble_sort import bubble_sort  # Ensure this module is in the same directory
+from bubble_sort import bubble_sort 
 
 # Main Window setup
 mainWindow = Tk()
