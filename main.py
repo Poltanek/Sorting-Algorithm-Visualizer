@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import ttk
 import random
 from bubble_sort import bubble_sort 
+from merge_sort import merge_sort
 
 # Main Window setup
 mainWindow = Tk()
@@ -52,6 +53,16 @@ def StartAlgorithm():
     
     if selected_alg.get() == "Bubble Sort":
         bubble_sort(data, drawData, speed)
+    if selected_alg.get() == "Selection Sort":
+        pass
+    if selected_alg.get() == "Insertion Sort":
+        pass
+    if selected_alg.get() == "Merge Sort":
+        merge_sort(data, drawData, speed)
+    if selected_alg.get() == "Quick Sort":
+        pass
+    if selected_alg.get() == "Heap Sort":
+        pass
 
 # ---------- UI Setup ----------
 UserInterface = Frame(mainWindow, bg="black")
