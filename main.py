@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 import random
-from bubble_sort import bubble_sort 
+from bubble_sort import bubble_sort
 from merge_sort import merge_sort
 
 # Main Window setup
@@ -65,17 +65,17 @@ def StartAlgorithm():
         pass
 
 # ---------- UI Setup ----------
-UserInterface = Frame(mainWindow, bg="black")
+UserInterface = Frame(mainWindow, bg="grey")
 UserInterface.grid(row=0, column=0, padx=15, pady=5)
-MainCanvas = Canvas(mainWindow, bg="white", width=600, height=380)
+MainCanvas = Canvas(mainWindow, bg="grey", width=600, height=380)
 MainCanvas.grid(row=2, column=0, padx=10, pady=5)
 
 # ---------- Widgets ----------
 SelectLbl = Label(UserInterface, text="Select Algorithm", bg="black", fg="white")
 SelectLbl.grid(row=0, column=0, padx=5, pady=5, sticky=W)
-AlgMenu = ttk.Combobox(UserInterface, textvariable=selected_alg, values=["Bubble Sort", "Selection Sort", "Insertion Sort", "Merge Sort", "Quick Sort", "Heap Sort"], state="readonly")
-AlgMenu.grid(row=0, column=1, padx=5, pady=5)
-AlgMenu.current(0)
+ComboBox = ttk.Combobox(UserInterface, textvariable=selected_alg, values=["Bubble Sort", "Selection Sort", "Insertion Sort", "Merge Sort", "Quick Sort", "Heap Sort"], state="readonly")
+ComboBox.grid(row=0, column=1, padx=5, pady=5)
+ComboBox.current(0)
 
 GenerateArrayBtn = Button(UserInterface, text="Generate Array", command=GenerateArray, bg="black", fg="white")
 GenerateArrayBtn.grid(row=0, column=2, padx=5, pady=5)
