@@ -9,7 +9,7 @@ This algorithm visualizer leverages the Tkinter Canvas widget to provide an inte
 ## Features
   - Entry Form
   - Coloured Graphs for appropriate sorting and execution
-  - Lots of different algorithmns from bubble sort, merge sort, quick sort and etc.
+  - Algorithms: bubble_sort, merge_sort, heap_sort, quick_sort, selection_sort, insertion_sort,
   
 
 ## Under Construction
