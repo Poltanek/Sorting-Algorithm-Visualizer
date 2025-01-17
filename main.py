@@ -3,7 +3,7 @@ from tkinter import ttk
 import random
 from bubble_sort import bubble_sort
 from merge_sort import merge_sort
-
+from heap_sort import heap_sort
 # Main Window setup
 mainWindow = Tk()
 mainWindow.title("Sorting Algorithm Visualizer")
@@ -62,7 +62,7 @@ def StartAlgorithm():
     if selected_alg.get() == "Quick Sort":
         pass
     if selected_alg.get() == "Heap Sort":
-        pass
+        heap_sort(data, drawData, speed)
 
 # ---------- UI Setup ----------
 UserInterface = Frame(mainWindow, bg="grey")
